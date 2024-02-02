@@ -1,4 +1,6 @@
 @use '@carbon/react';
+@use '@carbon/react/scss/breakpoint' as *;
+
 @use '../components/TutorialHeader/tutorial-header';
 @use './home/landing-page';
 @use './repos/repo-page';
@@ -20,4 +22,14 @@
 .cds--content {
   margin-top: 3rem;
   background: var(--cds-background);
+  padding: 0;
+}
+
+
+.cds--content .cds--css-grid {
+  max-width: 100%;
+  @include breakpoint(md) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
