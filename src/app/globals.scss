@@ -4,7 +4,7 @@
 @use '../components/TutorialHeader/tutorial-header';
 @use './home/landing-page';
 @use './repos/repo-page';
-
+@use '../components/Info/info';
 
 
 /// Remove overrides once Carbon bugs are fixed upstream.
